@@ -1,0 +1,660 @@
+/*
+Theme Name:bysicle Theme
+version:1.0
+Author:Yasin Canaz
+Author URI: http://drinkhamper.com/
+Description: Give your visitors an unforgettable experience with this modern wordpress theme to learn for bike lovers.
+Version: 1.1
+*/
+ /*-----------------Scroolbar--------------------*/
+ ::-webkit-scrollbar{
+    width: 10px;
+    background-color:#3cb1b8;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rebeccapurple;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 200ms;
+}a:hover{
+    color: black;
+}
+/*--------------------card Tasarımı--------------*/
+.cardd {
+    display: flex;
+    width: 100%;
+}
+
+.time-card:first-child {
+    margin-left: 0px;
+}
+
+.time-card {
+    max-width: 150px;
+    max-height:150px;
+    margin-left: 2rem;
+    padding: 0.5rem 1.5rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #cbeef0 0%, #effafb 100%);
+}
+
+.time-card h1 {
+    color: black;
+    font-weight: 550;
+}
+
+.time-card p {
+    color: rgba(0, 0, 0, 0.726);
+    font-weight: lighter;
+}
+
+/*-------------Navbar Başlangıcı----------*/
+nav {
+    width: 91%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999999999999999999999999999999;
+}
+
+nav .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+nav .main-menu {
+    width: 50%;
+}
+
+nav .main-menu ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    align-items: center;
+}
+
+nav .main-menu ul a {
+    margin-left: 37px;
+    color: #1d161e;
+    font-weight: 700;
+    letter-spacing: -.48px;
+    text-decoration: none;
+}
+
+nav .main-menu ul a:first-child img {
+    display: block;
+    width: 90px;
+    margin-right: 30px;
+}
+
+nav .social-menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .social-menu ul {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav .social-menu ul a {
+    text-decoration: none;
+    color: #1d161e;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+nav .social-menu ul a:first-child {
+    font-size: 18px;
+}
+
+/*-------------------Header Başlangıcı---------*/
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(60deg, #cbeef0 0%, #effafb 100%);
+    overflow:hidden;
+}
+
+header .row .images img {
+    width: 40%;
+    top: 40%;
+    left: 45%;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: 800ms;
+}
+
+header .row .text-box h1 {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 24rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 25px;
+    background-image: url("images/arkaplan.jpg");
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 1200ms;
+}
+header .row .text-box p {
+    width: 200px;
+    font-weight: lighter;
+    font-weight: 500;
+    position: absolute;
+    left: 78%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+/*-----------alt alan1----------*/
+.haraket1 {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+.haraket1 .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------Sol Taraf------------*/
+.haraket1 .row .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.oval {
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(60deg, #cbeef0 0%, #effafb 100%);
+    border-radius: 50%;
+}
+
+.haraket1 .row .left img {
+    position: absolute;
+    width: 80%;
+    transition: 700ms;
+}
+
+/*-----------Sağ Taraf----------------*/
+.haraket1 .row .right {
+    width: 50%;
+}
+/*-------------üst Baslik---------------*/
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading h2:first-child {
+    font-size: 3.2rem;
+    font-weight: lighter;
+}
+
+.heading .baslik h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.heading .baslik h2 {
+    font-size: 4.5rem;
+}
+/*-----------------Paragraf------------*/
+.paragraf {
+    width: 30rem;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+/*------------------hr------------------*/
+#hrem {
+    width: 100px;
+    height: 2px;
+    color: rgb(0, 0, 0) !important;
+    position: absolute;
+    right: 270px;
+    bottom: 150px;
+    transform: rotate(90deg);
+}
+/*------------------Marka Alanı-------------*/
+.marka{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.marka .row{
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(60deg, #cbeef0 0%, #effafb 100%);
+}
+/*--------------------Sol Taraf------------------*/
+.marka .row .left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}.marka .row .left .slide-marka img{
+    margin-left: 5rem;
+    margin-top: 3.3rem;
+}.marka .row .left .slide-marka img:first-child{
+    margin-left: 0rem;
+}
+/*-----------------Sağ Taraf--------------*/
+.marka .row .right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#resim3{
+    transition: 700ms;
+}
+/*----------------------Haraket2----------*/
+.haraket2{
+    width: 100%;
+    height: 100vh;
+} .haraket2 .row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}.haraket2 .row .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}.haraket2 .row .left .oval img{
+    width: 1000px;
+    object-fit: cover;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: rotate(-10deg);
+    transition: 700ms;
+}.haraket2 .row .left .oval{
+    display: flex;
+    justify-content: center;
+}/*----------------Sağ Taraf-----------*/
+.crd .text{
+    width: 30rem;
+    margin-top: 40px;
+}
+.haraket2 .row .right{
+    width: 50%;
+    height: 100%;
+}.haraket2 .row .right .crd .colmn:first-child{
+    margin-top: 0px;
+}.haraket2 .row .right .crd .colmn{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}.haraket2 .row .right .crd .colmn .text-box{
+    margin-left: 20px;
+}.haraket2 .row .right .crd .colmn .text-box h1{
+    font-weight: 900;
+}
+/*---------------Contact Form---------------*/
+.contact-form{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+}.contact-form .row{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}.contact-form .row .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------sağ taraf-------------------------*/
+.contact-form .row .right{
+    width: 50%;
+    background-image: linear-gradient(60deg, #cbeef0 0%, #effafb 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.contact-form .row .right form{
+    width: 55%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form .row .right form .colmn{
+    width: 100%;
+}.contact-form .row .right form .colmn input{
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.329);
+    color: rgba(14, 14, 14, 0.329);
+}
+.contact-form .row .right form .colmn input:focus{
+    outline: 0;
+}.contact-form .row .right form .colmn input::placeholder{
+    color:rgba(14, 14, 14, 0.329) ;
+}
+.contact-form .row .right form .colmn h5{
+    padding-bottom: 50px;
+}.contact-form .row .right form .colmn button{
+    background-color: transparent;
+    border:none;
+    float: right;
+    margin-top: 50px;
+}.contact-form .row .right form hr{
+    height: 50px;
+}
+/*---------------Footer Alanı-----------------------*/
+footer{
+    width: 100%;
+    overflow:hidden;
+    height: 10vh;
+    margin: 0px !important;
+    background-color: #1d161e;
+}footer .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#wrapper-menu{
+    color: black;
+    font-size: 25px;
+    display: none;
+}
+/*----------------Wrapper Menu-----------*/
+.wrapper-menu{
+    width: 50%;
+    position: fixed;
+    height: 100%;
+    background-color: transparent;
+    right: 0px;
+    z-index: 99999999999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 800ms;
+    display: none;
+}.wrapper-menu::before{
+    width: 110%;
+    content: "";
+    height: 110%;
+    background-color: rgba(3, 3, 3, 0.5);
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+}.wrapper-menu ul{
+    list-style-type:none;
+}
+.wrapper-menu ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+    padding-top: 20px;
+}.wrapper-menu #kapat{
+    position: absolute;
+    left: 5px;
+    font-size: 20px;
+    top: 0px;
+    color: white;
+    cursor: pointer;
+}.wrapper-menu #icon-social{
+    list-style-type: none;
+    display: flex;
+}.wrapper-menu #icon-social a{
+    margin-left: 15px;
+}
+/*--------------Mobil Görünüm----------------*/
+.loading-animation{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 999999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.loading-animation lottie-player{
+    width: 330px;
+    height: 330px;
+}.content{
+    min-height:83vh;
+}.footer-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+}footer .row ul a li img{
+    width: auto;
+}footer .row ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}footer .row ul li{
+    display: inline-block;
+    margin-left: 20px;
+}footer .row ul li a:hover{
+    color: lightblue;
+}
+/*--------------Blog Alanı Düzenleme-------------------*/
+.containers{
+    min-height:850px;
+    display: flex;
+    text-overflow: ellipsis;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-word;
+    background-color: #f9f9f9;
+    padding: 50px;
+}.containers p{
+    display: block;
+}.containers .row{
+    display: flex;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 100%;
+    background-color: #f9f9f9;
+    justify-content: space-around;
+}.containers .row span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.containers .row span span{
+    font-size: 35px;
+    padding: 0px 10px;
+}.containers .row .colmn{
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 5px 30px -3px rgb(0 0 0 / 16%);
+    background-color: white;
+    padding: 0px;
+}.containers .row .colmn img{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}.containers .row .colmn .text-box{
+    padding:0px 25px ;
+    padding-bottom: 30px;
+}.containers .row .colmn .text-box h1{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.795);
+    font-family: 800;
+    padding-top: 8px;
+    margin-bottom: -10px;
+}.containers .row .colmn .text-box p{
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.658);
+    line-height: 30px;
+}.containers .row .colmn .text-box .date{
+    float: right;
+}.containers .row .colmn .tag{
+   background-color: rgb(10, 128, 10);
+   color: white !important;
+   padding:2px 15px;
+   border-radius: 4px;
+   display: inline-block;
+   margin-top: 5px;
+}.container-blog{
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}.container-blog .row{
+    width: 50%;
+    background-color: white;
+    box-shadow: 0px 5px 30px -3px rgb(0 0 0/16%);
+    z-index: -1;
+    padding: 20px 50px;
+}.container-blog .row .text-head{
+    font-size: 30px;
+}
+@media screen and (max-width:1900px){
+    .containers .row .colmn{
+        width: 40%;
+    }
+}
+@media screen and (max-width:900px){
+    .containers .row .colmn{
+        width: 100%;
+    }
+}@media screen and (max-width:500px){
+    #wrapper-menu{
+    display: block;
+    cursor: pointer;
+}
+    #resim1{
+        width: 80%;
+        top: 50%;
+        left: 50%;
+    }
+    header p{
+        display: none;
+    }header .row .text-box h1{
+        font-size: 5.5rem;
+    }.social-menu a{
+        display: none;
+    }.social-menu a:last-child{
+        font-size: 2rem;
+    }#menu a{
+        display: none;
+    }#menu a:first-child{
+        display: block;
+        width: 20px;
+    }nav .main-menu ul a:first-child img{
+        width: 50px;
+    }header .row .text-box .text-background img{
+        width: 90%;
+        height: 300px;
+    }.oval{
+        width: 300px;
+        height: 300px;
+    }
+    .haraket1 .row .left{
+        width: 100%;
+        margin-top: 20px;
+    }.haraket1 .row .right{
+        width: 100%;
+        margin-top: 70px;
+    }
+    #hrem{
+        display: none;
+    }.marka .row .left{
+        width: 100%;
+    }.marka .row {
+        height: 100%;
+    }.marka .row .right{
+        width: 100%;
+    }.marka .row .right img{
+        display: none;
+    }.marka .row .left .row-in p{
+        width: 90%;
+    }.haraket2 .row .left{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+    }.haraket2 .row .right{
+        width: 100%;
+        margin-top: 150px;
+        height: auto;
+    }#resim4{
+        width: 100%;
+        top: 0%;
+    }.haraket2 .row .crd .colmn{
+        padding: 0px 50px;
+    }.contact-form .row  .left{
+        display: none;
+    }.contact-form .row  .right{
+        width: 100%;
+        margin-top: 150px;
+    }footer .row ul a{
+        font-size: 10px;
+    }footer .row ul{
+        width: 100%;
+    }
+    footer .row ul a:first-child img{
+        width: 50px;
+    }footer .row ul a:last-child{
+        font-size: 10px;
+    }.containers .row{
+        width: 100%;
+    }
+}
